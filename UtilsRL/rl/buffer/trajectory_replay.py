@@ -8,8 +8,8 @@ from .base import SimpleReplay, FlexReplay
 
 class TrajectorySimpleReplay(SimpleReplay):
     def __init__(self, max_size: int, max_traj_length: int, field_specs: Optional[DictLike]=None, *args, **kwargs):
-        super().__init__(max_size, field_specs, *args, **kwargs)
         self._max_traj_length = max_traj_length
+        super().__init__(max_size, field_specs, *args, **kwargs)
         
     def reset(self):
         self._pointer = self._size = 0
