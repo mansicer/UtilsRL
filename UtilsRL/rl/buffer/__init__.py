@@ -12,6 +12,7 @@ from gym.spaces import (
 from .base import Replay, SimpleReplay, FlexReplay
 from .transition_replay import TransitionSimpleReplay, TransitionFlexReplay
 from .prioritized_replay import PrioritizedSimpleReplay, PrioritizedFlexReplay
+from .trajectory_replay import TrajectorySimpleReplay
 
 __SUPPORT_CONVERTING_SPACES__ = {
     Box, Discrete, Dict
